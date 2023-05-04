@@ -75,6 +75,6 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ${{ env.newVersion}}
+        tags: barohayon89/mayapp:${{ env.newVersion}}
         context: .
         build-args: ARTIFACT_PATH=myapp.jar

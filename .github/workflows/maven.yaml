@@ -54,7 +54,6 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: myapp
-        path: myapp.jar
    
     - name: Download Version artifact 
       uses: actions/download-artifact@v2
@@ -77,4 +76,4 @@ jobs:
         push: true
         tags: barohayon89/mayapp:${{ env.newVersion}}
         context: .
-        build-args: ARTIFACT_PATH=myapp.jar
+        build-args: ARTIFACT_PATH=myapp-${{ env.newVersion}}.jar

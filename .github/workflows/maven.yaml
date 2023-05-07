@@ -5,6 +5,8 @@ on:
   pull_request:
     branches: [ "master" ]
 
+    #some comment
+
 jobs:
   build_artifact:
     runs-on: ubuntu-latest
